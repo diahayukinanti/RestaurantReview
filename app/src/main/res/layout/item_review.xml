@@ -7,5 +7,6 @@
     android:gravity="center_vertical"
     android:paddingTop="8dp"
     android:paddingBottom="8dp"
+    android:textColor="#95003C43"
     android:textAppearance="?android:attr/textAppearanceListItemSmall"
     tools:text="Review" />

@@ -78,20 +78,24 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/LoginTextInputLayoutStyle"
+        android:theme="@style/LoginTextInputLayoutStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvReview">
+        app:layout_constraintTop_toBottomOf="@+id/tvReview"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edReview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@string/review" />
+            android:hint="@string/review"
+            android:textColor="#95003C43"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -101,6 +105,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/send"
+        android:backgroundTint="#95003C43"
         app:layout_constraintStart_toStartOf="@id/inputLayout"
         app:layout_constraintTop_toBottomOf="@id/inputLayout" />
 
